@@ -1,0 +1,608 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior:smooth ;
+}
+body{
+  
+    background-image: url(./imagenes/fondo\ 2.avif);
+    background-repeat: no-repeat;
+    background-position: 50px 50px;
+    background-position: 20% 10%;
+    background-position: left top;
+    background-position: center center;
+    height: 1800px;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+::-webkit-scrollbar{
+    width: 12px;
+   
+}
+::-webkit-scrollbar{
+    background:skyblue;
+    border-radius: 6px;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 7px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(10, 47, 212);
+    transition: 0.5s;
+    z-index: 1000;
+
+}
+header.sticky{
+    background: black;
+    box-shadow: 0 5px 20px black;
+}
+header .logo{
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 700;
+}
+header .nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+     margin: 10px; 
+}
+header ul li a{
+    color: white;
+    text-decoration:none;
+    padding: 10px 20px;
+    border-radius:5px;
+}
+header ul li a:hover{
+    background: skyblue;
+    color: black;
+    box-shadow:0 0 10px skyblue;
+}
+
+header .action .searchBx{
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 5px;
+}
+header .action .searchBx i{
+    font-size: 1.4em;
+    margin: 5px;
+    color:black;
+}
+header .action .searchBx input{
+    outline: none;
+    border: none;
+    font-size: 1em;
+    color: black;
+}
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 8px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner .bg{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner .bg .content{
+    width: 50%;
+    height: 100%;
+}
+.banner .bg .content h2{
+    font-size: 6em;
+    color: rgb(0, 0, 0);
+    letter-spacing: 1px;   
+}
+.banner .bg .content p{
+    font-size: 5em;
+    color: rgb(0, 0, 0);
+    letter-spacing: 2px;
+} 
+.banner .bg .content a{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: 1px solid skyblue;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius:5px;
+    color: white;
+    letter-spacing: 1px;
+}
+.banner .bg .content a:hover{
+    background: skyblue;
+    border: none;
+    color: black;
+    box-shadow:0 0 10px skyblue;
+}
+.banner .bg img{
+    width: 2000px;
+    filter: drop-shadow( 10px 10px 10px rgb(0, 0, 0));
+}
+.about{
+
+    position: relative;
+    width: 100%;
+    min-height: 75vh;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about .contentBx{
+    font-size: 2em;
+    width: 50%;
+    margin: 20px;
+    
+}
+.about .contentBx h2{
+    font-size: 4em;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+}
+.about .contentBx p{
+    font-size: 2em;
+    max-width: 600px;
+    text-align: justify;
+    color: rgb(4, 4, 4);
+}
+.about .contentBx a{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: 1px solid skyblue;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: rgb(254, 254, 254);
+    letter-spacing: 1px;
+}
+.about .contentBx a:hover{
+    background: skyblue;
+    border: none;
+    color: black;
+    box-shadow: 0 0 10px skyblue;
+}
+.games{
+    padding: 0px 100px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px auto;
+
+}
+.games h2{
+    color: white;
+    margin: 10px 0;
+}
+.games ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    
+}
+.games ul li{
+    list-style: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color:white;
+}
+.games ul li.active{
+    background: skyblue;
+    color: black;
+    box-shadow: 0 0 10px skyblue;
+}
+.games .cardBx{
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+.games .cardBx .card{
+    width: 280px;
+    border-radius: 10px;
+    margin: 20px 40px;
+    background: black;
+    overflow: hidden;
+
+}
+.games .cardBx .card img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    
+    
+}
+.games .cardBx .card .content{
+    padding: 10px;
+}
+.games .cardBx .card .content h4{
+    color: white;
+    margin: 15px 0;
+}
+.games .cardBx .card .progress-line{
+    position: relative;
+    height: 10px;
+    width: 100%;
+    background: rgba(0, 0, 255, 0.363);
+    margin-bottom: 15px;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left ;
+    animation: animate 1s cubic-bezier(1,0,0.5,1)forwards;
+}
+.games .cardBx .card .progress-line span{
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    border-radius: 10px;
+    background: skyblue;
+    box-shadow: 0 0 10px skyblue;
+    transform: scaleX(0);
+    transform-origin: left ;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+@keyframes animate{
+    100%{
+        transform: scaleX(1);
+    }
+}
+.games .cardBx .card .info{
+    border-top: 2px solid rgba(0, 0, 255, 0.288);
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.games .cardBx .card .info p{
+    font-size: 1em;
+    color:white
+}
+.games .cardBx .card .info p span{
+    color:skyblue
+}
+.games .cardBx .card .info a{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: 1px solid skyblue;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: white;
+    letter-spacing: 1px;
+}
+.games .cardBx .card .info a:hover{
+    background: skyblue;
+    border: none;
+    color: black;
+    box-shadow: 0 0 10px skyblue;
+}
+.games .cardBx .card.hide{
+    display: none;
+}
+.tournaments{
+    padding: 0px 100px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tournaments{
+    color:white;
+    margin: 10px 0;  
+}
+.tournaments .boxBx{
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.tournaments .boxBx .box{
+    width: 350px;
+    border-radius: 10px;
+    margin: 20px 40px;
+    background: black;
+    overflow: hidden;
+}
+.tournaments .boxBx .box img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.tournaments .boxBx .box .content{
+    padding: 10px;
+}
+.tournaments .boxBx .box .content h4{
+    color: white;
+    margin-top: 15px;
+}
+
+.tournaments .boxBx .box .content h4 span{
+    color: skyblue;
+}
+.tournaments .boxBx .box .content p{
+    text-align: justify;
+    color: gray;
+    margin-top: 10px;
+}
+.tournaments .boxBx .box .content  .btn{
+    display: flex;
+    justify-content: space-between;
+}
+.tournaments .boxBx .box .content  .watch{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    background: skyblue;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color:black;
+    letter-spacing: 1px;
+    box-shadow: 0 0 10px skyblue;
+}
+.tournaments .boxBx .box .content .watch:hover{
+    border: 1px solid skyblue;
+    background: none;
+    color: white;
+    box-shadow: none;
+}
+.tournaments .boxBx .box .content  .join{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: 1px solid skyblue;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: white;
+    letter-spacing: 1px;
+}
+.tournaments .boxBx .box .content .join:hover{
+    background: skyblue;
+    border: none;
+    color: black;
+    box-shadow: 0 0 10px skyblue;
+}
+
+.contact{
+    padding:  20px 100px;
+    width:100%;
+    min-height: 50vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact img{
+    height: 100%;
+    width: 50%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.contact form{
+    width: 50%;
+    margin: 30px;
+}
+.contact .form h1{
+    color: white;
+}
+.contact .form .inputBx{
+    margin:10px 0;
+}
+.contact .form .inputBx p{
+    color: white;
+}
+.contact .form .inputBx input,
+.contact .form .inputBx textarea{
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 100%;
+    color: white;
+    background: rgb(26, 38, 91);
+    min-height: 15px;
+    font-size: 1.1em;
+}
+.contact .form .inputBx textarea{
+    height: 150px;
+}
+.contact .form .inputBx input[type ="submit"]{
+    display: inline inline-block;
+    padding: 10px 20px;
+    margin: 15px 0;
+    outline: none;
+    background: transparent;
+    border: 1px solid skyblue;
+    text-decoration: none;
+    font-weight: 700;
+    width: 150px;
+    border-radius: 5px ;
+    color: white;
+    letter-spacing: 1px;
+}
+.contact .form .inputBx input[type ="submit"]:hover{
+    background: skyblue;
+    border: none;
+    color: black;
+    box-shadow: 0 0 10px skyblue;
+}
+
+footer{
+    padding: 10px 100px;
+}
+footer .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .info .logo{
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 700;
+}
+footer .info p{
+    color: white;
+}
+footer .info ul{
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .info ul li{
+    list-style: none;
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid skyblue;
+}
+footer .info ul li:hover{
+    background: skyblue;
+    border: none;
+    box-shadow: 0 0 10px skyblue;
+}
+footer .info ul li a i{
+    font-size: 1.5em;
+    color: white;
+}
+footer .info ul li:hover a i{
+    color: black;
+}
+
+.animeX{
+    position: relative;
+    transform: translate(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+.animeX.active{
+    transform: translateY(0px) ;
+    opacity: 1;
+}
+
+@media (max-width: 991px)
+{
+    header{
+        padding: 15px 40px;
+    }
+    header .nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgb(213, 103, 103);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 1000;
+    }
+    header .nav.active{
+        display: flex;
+
+    }
+    header .nav li{
+        margin: 20px 0;
+    }
+    header .nav li a{
+        font-size: 24px;
+        margin: 10px 0;
+    }
+    .toggleMenu{
+        position:relative;
+        width: 30px;
+        height: 30px;
+        background: url(menu.png);
+        background-position: center;
+        background-size: 30px; 
+        background-repeat: no-repeat;
+        cursor: pointer;
+        z-index: 1001;
+    }
+    .toggleMenu.active{
+        background: url(menu.png);
+        background-position: center;
+        background-size: 30px; 
+        background-repeat: no-repeat;
+    }
+    .banner .bg img {
+        position: absolute;
+    }
+    .banner .bg .content {
+        width: 100%;
+        height: 100%;
+        background: rgb(27 35 67 / 50%);
+        padding: 20px;
+        z-index: 1;
+        border-radius: 10px;
+    }
+    .about{
+        flex-direction: column;
+    }
+    .about .contentBx {
+        width: 100%;
+    }
+    .contact{
+        flex-direction: column;
+    }
+    .contact img {
+        height: 100%;
+        width: 100%;
+    }
+    .contact .form {
+        width: 100%;
+        margin: 30px;
+        padding: 10px;
+    }
+}
